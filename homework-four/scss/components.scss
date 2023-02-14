@@ -1,0 +1,112 @@
+.background-props {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tourComponent {
+  width: $tour-banner-width;
+  height: $tour-banner-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .infoHolder {
+    width: 90%;
+    height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: "Proxima Nova ScOsf Extra Condensed", "Gill Sans", sans serif;
+
+    h1 {
+      font-style: italic;
+      font-size: 60px;
+      font-weight: 100;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 30px;
+      font-weight: 100;
+      padding-bottom: 30px;
+      font-style: italic;
+    }
+
+    a {
+      font-size: 15px;
+      font-weight: bold;
+      font-family: "Gill Sans", sans serif;
+      border: 2px solid $site-blue;
+      background-color: $site-blue;
+      border-radius: 20px;
+      padding: 8px 8px;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.israelPic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour/tour-01.jpg);
+}
+
+.usaPic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour/tour-02.jpg);
+}
+
+.australiaPic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour/tour-03.jpg);
+}
+
+footer {
+  width: $site-width;
+  height: 100px;
+  background-color: $site-blue;
+  margin: 0 auto;
+
+  color: white;
+
+  .footerContent {
+    max-width: $content-width;
+    height: 100px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .travelFly {
+      width: 136px;
+      height: 42px;
+      border: 2px;
+      border-style: solid;
+      border-color: white;
+      color: white;
+      font-size: 26px;
+      text-align: center;
+      letter-spacing: 4px;
+    }
+
+    .copyright {
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .fa-brands {
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 900px) {
+  .tourComponent .infoHolder {
+    //font-size: 150%;
+  }
+}

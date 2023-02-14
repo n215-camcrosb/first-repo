@@ -1,0 +1,305 @@
+.background-props {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tourComponent {
+  width: 236px;
+  height: 304px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tourComponent .infoHolder {
+  width: 90%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-family: "Proxima Nova ScOsf Extra Condensed", "Gill Sans", sans serif;
+}
+.tourComponent .infoHolder h1 {
+  font-style: italic;
+  font-size: 60px;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+.tourComponent .infoHolder p {
+  font-size: 30px;
+  font-weight: 100;
+  padding-bottom: 30px;
+  font-style: italic;
+}
+.tourComponent .infoHolder a {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Gill Sans", sans serif;
+  border: 2px solid #79addc;
+  background-color: #79addc;
+  border-radius: 20px;
+  padding: 8px 8px;
+  text-decoration: none;
+  color: white;
+}
+
+.israelPic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-01.jpg);
+}
+
+.usaPic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-02.jpg);
+}
+
+.australiaPic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-03.jpg);
+}
+
+footer {
+  width: 1280px;
+  height: 100px;
+  background-color: #79addc;
+  margin: 0 auto;
+  color: white;
+}
+footer .footerContent {
+  max-width: 980px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footerContent .travelFly {
+  width: 136px;
+  height: 42px;
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 4px;
+}
+footer .footerContent .copyright {
+  font-size: 15px;
+  font-weight: bold;
+}
+footer .footerContent .fa-brands {
+  margin-right: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.hero {
+  max-width: 1280px;
+  height: 500px;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg);
+}
+.hero nav {
+  max-width: 980px;
+  height: 92px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 2px solid white;
+}
+.hero nav .travelFly {
+  width: 136px;
+  height: 42px;
+  border: 2px;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 4px;
+}
+.hero nav .navLinks {
+  width: 340px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.hero nav .navLinks a {
+  font-size: 15px;
+  font-style: bold;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  text-align: center;
+}
+.hero nav .navLinks p {
+  margin: 0 10px;
+  color: #79addc;
+}
+.hero .heroText {
+  margin: 58px auto;
+  width: 714px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  font-family: "Gill Sans", sans serif;
+}
+.hero .heroText h1 {
+  font-family: "Proxima Nova ScOsf Extra Condensed";
+  font-size: 60px;
+  font-weight: 700;
+  font-style: italic;
+}
+.hero .heroText p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+  font-style: italic;
+}
+.hero .heroText a {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 8px;
+  border: 2px solid #79addc;
+  background-color: #79addc;
+  text-decoration: none;
+  color: white;
+}
+
+.promo {
+  max-width: 818px;
+  min-height: 304px;
+  margin: -43px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.formArea {
+  max-width: 818px;
+  min-height: 304px;
+  margin: 0 auto;
+}
+.formArea h1 {
+  font-size: 60px;
+  font-family: "Proxima Nova SCOsF Extra Condensed";
+  font-weight: 700;
+  margin-top: 20px;
+  font-style: italic;
+}
+.formArea .form label {
+  font-size: 15px;
+  font-weight: 600;
+}
+.formArea .form input {
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  border: solid #79addc 2px;
+  margin-bottom: 20px;
+}
+.formArea .form .twoInput {
+  min-height: 58px;
+  display: flex;
+  justify-content: space-between;
+}
+.formArea .form .twoInput .left {
+  width: 344px;
+}
+.formArea .form .twoInput .right {
+  width: 453px;
+}
+.formArea .form .singleLineInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.formArea .form .singleLineInput .largeInput {
+  width: 698px;
+  margin: 0;
+}
+.formArea .form .threeInputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.formArea .form .threeInputs .oneOfThreeInputs {
+  width: 200px;
+  min-height: 58px;
+}
+.formArea .form .threeInputs .oneOfThreeInputs label {
+  margin-right: 30px;
+}
+.formArea .form .threeInputs .oneOfThreeInputs input {
+  width: 100px;
+}
+.formArea .form textarea {
+  width: 818px;
+  height: 192px;
+  resize: vertical;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  border: solid #79addc 2px;
+  margin-bottom: 20px;
+}
+.formArea .form .submit {
+  width: 818px;
+  height: 60px;
+  text-align: center;
+  background-color: #79addc;
+  border: 2px solid #79addc;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.formArea .form .submit h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 860px) {
+  .promo {
+    flex-direction: column;
+  }
+}
+@media (max-width: 860px) {
+  .tourComponent {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
