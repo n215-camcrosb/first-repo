@@ -1,3 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Gill Sans TTC", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: "Gill Sans TTC";
+  src: url(../fonts/GillSans.ttc);
+}
+@font-face {
+  font-family: "Proxima Nova ScOsf";
+  src: url(../fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@media (max-width: 860px) {
+  body {
+    background-color: #79addc;
+  }
+}
 .background-props {
   background-size: cover;
   background-position: center;
@@ -19,7 +56,7 @@
   align-items: center;
   justify-content: space-between;
   color: white;
-  font-family: "Proxima Nova ScOsf Extra Condensed", "Gill Sans", sans serif;
+  font-family: "Proxima Nova ScOsf", "Gill Sans", sans serif;
 }
 .tourComponent .infoHolder h1 {
   font-style: italic;
@@ -36,7 +73,7 @@
 .tourComponent .infoHolder a {
   font-size: 15px;
   font-weight: bold;
-  font-family: "Gill Sans", sans serif;
+  font-family: "Gill Sans TTC", sans serif;
   border: 2px solid #79addc;
   background-color: #79addc;
   border-radius: 20px;
@@ -58,7 +95,7 @@
 }
 
 footer {
-  width: 1280px;
+  max-width: 1280px;
   height: 100px;
   background-color: #79addc;
   margin: 0 auto;
@@ -91,30 +128,20 @@ footer .footerContent .fa-brands {
   margin-right: 10px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@media (max-width: 860px) {
+  .tourComponent {
+    width: 95%;
+    margin: 0 auto 20px auto;
+  }
+  .tourComponent .infoHolder {
+    width: 20%;
+    height: 70%;
+  }
+  footer {
+    background-color: white;
+    color: #79addc;
+  }
 }
-
-html,
-body {
-  height: 100%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-bottom: 16px;
-}
-
 .hero {
   max-width: 1280px;
   height: 500px;
@@ -127,7 +154,7 @@ p {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   border-bottom: 2px solid white;
 }
 .hero nav .travelFly {
@@ -142,8 +169,7 @@ p {
   letter-spacing: 4px;
 }
 .hero nav .navLinks {
-  width: 340px;
-  height: 42px;
+  width: 440px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -170,10 +196,10 @@ p {
   align-items: center;
   justify-content: space-evenly;
   color: white;
-  font-family: "Gill Sans", sans serif;
+  font-family: "Gill Sans TTC", sans serif;
 }
 .hero .heroText h1 {
-  font-family: "Proxima Nova ScOsf Extra Condensed";
+  font-family: "Proxima Nova ScOsf";
   font-size: 60px;
   font-weight: 700;
   font-style: italic;
@@ -211,7 +237,7 @@ p {
 }
 .formArea h1 {
   font-size: 60px;
-  font-family: "Proxima Nova SCOsF Extra Condensed";
+  font-family: "Proxima Nova ScOsf";
   font-weight: 700;
   margin-top: 20px;
   font-style: italic;
@@ -274,7 +300,7 @@ p {
   margin-bottom: 20px;
 }
 .formArea .form .submit {
-  width: 818px;
+  max-width: 818px;
   height: 60px;
   text-align: center;
   background-color: #79addc;
@@ -293,13 +319,54 @@ p {
 
 @media (max-width: 860px) {
   .promo {
+    width: 90%;
+    display: block;
+  }
+  .navLinks p,
+  .navLinks a {
+    display: none;
+  }
+  .formArea h1 {
+    margin-left: 20px;
+  }
+  .formArea .form {
+    margin-left: 20px;
+    margin: 0 auto;
+  }
+  .formArea .form .twoInput {
+    width: 100%;
     flex-direction: column;
   }
-}
-@media (max-width: 860px) {
-  .tourComponent {
-    width: 100%;
+  .formArea .form .twoInput .left {
+    width: 80%;
+    margin: 0 auto 20px auto;
   }
+  .formArea .form .twoInput .right {
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+  .formArea .form .singleLineInput {
+    width: 100%;
+    justify-content: center;
+  }
+  .formArea .form .singleLineInput label {
+    display: none;
+  }
+  .formArea .form .singleLineInput .largeInput {
+    width: 80%;
+  }
+  .formArea .form .singleLineInput .largeInput input::placeholder {
+    opacity: 1;
+  }
+}
+@media (max-width: 980px) {
+  .navLinks {
+    margin-right: 20px;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: space-between;
     color: white;
-    font-family: "Proxima Nova ScOsf Extra Condensed", "Gill Sans", sans serif;
+    font-family: "Proxima Nova ScOsf", "Gill Sans", sans serif;
 
     h1 {
       font-style: italic;
@@ -39,7 +39,7 @@
     a {
       font-size: 15px;
       font-weight: bold;
-      font-family: "Gill Sans", sans serif;
+      font-family: "Gill Sans TTC", sans serif;
       border: 2px solid $site-blue;
       background-color: $site-blue;
       border-radius: 20px;
@@ -66,7 +66,7 @@
 }
 
 footer {
-  width: $site-width;
+  max-width: $site-width;
   height: 100px;
   background-color: $site-blue;
   margin: 0 auto;
@@ -105,8 +105,20 @@ footer {
   }
 }
 
-@media (max-width: 1000px) and (min-width: 900px) {
-  .tourComponent .infoHolder {
-    //font-size: 150%;
+@media (max-width: 860px) {
+  .tourComponent {
+    width: 95%;
+    margin: 0 auto 20px auto;
+
+    .infoHolder {
+      width: 20%;
+      height: 70%;
+    }
+  }
+
+  footer {
+    background-color: white;
+
+    color: $site-blue;
   }
 }
