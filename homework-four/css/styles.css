@@ -23,8 +23,8 @@ p {
 }
 
 @font-face {
-  font-family: "Gill Sans TTC";
-  src: url(../fonts/GillSans.ttc);
+  font-family: "Gill Sans";
+  src: url(../fonts/Gill-Sans-Font-Family/Gill\ Sans.otf);
 }
 @font-face {
   font-family: "Proxima Nova ScOsf";
@@ -73,7 +73,7 @@ p {
 .tourComponent .infoHolder a {
   font-size: 15px;
   font-weight: bold;
-  font-family: "Gill Sans TTC", sans serif;
+  font-family: "Gill Sans", sans serif;
   border: 2px solid #79addc;
   background-color: #79addc;
   border-radius: 20px;
@@ -109,16 +109,8 @@ footer .footerContent {
   align-items: center;
   justify-content: space-between;
 }
-footer .footerContent .travelFly {
-  width: 136px;
-  height: 42px;
-  border: 2px;
-  border-style: solid;
-  border-color: white;
-  color: white;
-  font-size: 26px;
-  text-align: center;
-  letter-spacing: 4px;
+footer .footerContent .mobileImgs {
+  display: none;
 }
 footer .footerContent .copyright {
   font-size: 15px;
@@ -134,12 +126,34 @@ footer .footerContent .fa-brands {
     margin: 0 auto 20px auto;
   }
   .tourComponent .infoHolder {
-    width: 20%;
+    width: 50%;
     height: 70%;
   }
   footer {
-    background-color: white;
-    color: #79addc;
+    background-color: black;
+    color: white;
+  }
+  footer .footerContent {
+    width: 80%;
+  }
+}
+@media (max-width: 630px) {
+  footer .footerContent {
+    display: block;
+  }
+  footer .footerContent .basicFooter {
+    display: none;
+  }
+  footer .footerContent .mobileImgs {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .footerContent .copyright {
+    width: 100%;
+    text-align: center;
   }
 }
 .hero {
@@ -156,17 +170,6 @@ footer .footerContent .fa-brands {
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid white;
-}
-.hero nav .travelFly {
-  width: 136px;
-  height: 42px;
-  border: 2px;
-  border-style: solid;
-  border-color: white;
-  color: white;
-  font-size: 26px;
-  text-align: center;
-  letter-spacing: 4px;
 }
 .hero nav .navLinks {
   width: 440px;
@@ -196,7 +199,7 @@ footer .footerContent .fa-brands {
   align-items: center;
   justify-content: space-evenly;
   color: white;
-  font-family: "Gill Sans TTC", sans serif;
+  font-family: "Gill Sans", sans serif;
 }
 .hero .heroText h1 {
   font-family: "Proxima Nova ScOsf";
@@ -326,6 +329,9 @@ footer .footerContent .fa-brands {
   .navLinks a {
     display: none;
   }
+  .hero .heroText {
+    width: 80%;
+  }
   .formArea h1 {
     margin-left: 20px;
   }
@@ -346,17 +352,45 @@ footer .footerContent .fa-brands {
     margin: 0 auto 20px auto;
   }
   .formArea .form .singleLineInput {
-    width: 100%;
-    justify-content: center;
-  }
-  .formArea .form .singleLineInput label {
-    display: none;
+    width: 80%;
+    margin: 0 auto 20px auto;
+    justify-content: space-between;
   }
   .formArea .form .singleLineInput .largeInput {
     width: 80%;
   }
-  .formArea .form .singleLineInput .largeInput input::placeholder {
-    opacity: 1;
+  .formArea .form .threeInputs {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .formArea .form .threeInputs .oneOfThreeInputs {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .formArea .form .threeInputs .oneOfThreeInputs label {
+    margin: 0 auto;
+  }
+  .formArea .form .threeInputs .oneOfThreeInputs input {
+    width: 80%;
+  }
+  .formArea .form .textAreaDiv {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .formArea .form .textAreaDiv textarea {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .formArea .form .submit {
+    width: 80%;
+    margin: 20px auto 50px auto;
+    background-color: white;
+    border: 2px solid white;
+    color: #79addc;
   }
 }
 @media (max-width: 980px) {

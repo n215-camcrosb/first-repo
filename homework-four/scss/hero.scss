@@ -17,18 +17,6 @@
 
     border-bottom: 2px solid white;
 
-    .travelFly {
-      width: 136px;
-      height: 42px;
-      border: 2px;
-      border-style: solid;
-      border-color: white;
-      color: white;
-      font-size: 26px;
-      text-align: center;
-      letter-spacing: 4px;
-    }
-
     .navLinks {
       width: 440px;
       //height: 42px;
@@ -63,7 +51,7 @@
     align-items: center;
     justify-content: space-evenly;
     color: white;
-    font-family: "Gill Sans TTC", sans serif;
+    font-family: "Gill Sans", sans serif;
 
     h1 {
       font-family: "Proxima Nova ScOsf";
@@ -175,6 +163,9 @@
         input {
           width: 100px;
         }
+
+        img {
+        }
       }
     }
 
@@ -223,6 +214,10 @@
     display: none;
   }
 
+  .hero .heroText {
+    width: 80%;
+  }
+
   .formArea {
     h1 {
       margin-left: 20px;
@@ -248,18 +243,54 @@
       }
 
       .singleLineInput {
-        width: 100%;
-        justify-content: center;
+        width: 80%;
+        margin: 0 auto 20px auto;
+        justify-content: space-between;
         label {
-          display: none;
         }
 
         .largeInput {
           width: 80%;
-          input::placeholder {
-            opacity: 1;
+        }
+      }
+
+      .threeInputs {
+        width: 80%;
+        margin: 0 auto;
+
+        .oneOfThreeInputs {
+          width: 30%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          label {
+            margin: 0 auto;
+          }
+          input {
+            width: 80%;
           }
         }
+      }
+
+      .textAreaDiv {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        textarea {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+
+      .submit {
+        width: 80%;
+        margin: 20px auto 50px auto;
+        background-color: white;
+        border: 2px solid white;
+        color: $site-blue;
       }
     }
   }

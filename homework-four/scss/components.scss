@@ -39,7 +39,7 @@
     a {
       font-size: 15px;
       font-weight: bold;
-      font-family: "Gill Sans TTC", sans serif;
+      font-family: "Gill Sans", sans serif;
       border: 2px solid $site-blue;
       background-color: $site-blue;
       border-radius: 20px;
@@ -82,16 +82,8 @@ footer {
     align-items: center;
     justify-content: space-between;
 
-    .travelFly {
-      width: 136px;
-      height: 42px;
-      border: 2px;
-      border-style: solid;
-      border-color: white;
-      color: white;
-      font-size: 26px;
-      text-align: center;
-      letter-spacing: 4px;
+    .mobileImgs {
+      display: none;
     }
 
     .copyright {
@@ -111,14 +103,43 @@ footer {
     margin: 0 auto 20px auto;
 
     .infoHolder {
-      width: 20%;
+      width: 50%;
       height: 70%;
     }
   }
 
   footer {
-    background-color: white;
+    background-color: black;
 
-    color: $site-blue;
+    color: white;
+
+    .footerContent {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  footer {
+    .footerContent {
+      display: block;
+
+      .basicFooter {
+        display: none;
+      }
+
+      .mobileImgs {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .copyright {
+        width: 100%;
+        text-align: center;
+      }
+    }
   }
 }
