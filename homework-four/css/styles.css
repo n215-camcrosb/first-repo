@@ -280,18 +280,12 @@ footer .footerContent .fa-brands {
 .formArea .form .threeInputs .oneOfThreeInputs {
   width: 200px;
   max-height: 58px;
-  position: relative;
 }
 .formArea .form .threeInputs .oneOfThreeInputs label {
   margin-right: 30px;
 }
 .formArea .form .threeInputs .oneOfThreeInputs input {
   width: 100px;
-}
-.formArea .form .threeInputs .oneOfThreeInputs img {
-  position: relative;
-  width: 20px;
-  height: 10px;
 }
 .formArea .form textarea {
   width: 818px;
@@ -339,6 +333,13 @@ footer .footerContent .fa-brands {
   .formArea .form {
     margin-left: 20px;
     margin: 0 auto;
+  }
+  .formArea .form input {
+    border-color: black;
+    border-width: 1px;
+  }
+  .formArea .form textarea {
+    border: 1px solid black;
   }
   .formArea .form .twoInput {
     width: 100%;
@@ -401,10 +402,6 @@ footer .footerContent .fa-brands {
   nav .navLinks {
     margin-right: 20px;
   }
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -155,7 +155,6 @@
       .oneOfThreeInputs {
         width: 200px;
         max-height: 58px;
-        position: relative;
 
         label {
           margin-right: 30px;
@@ -165,12 +164,6 @@
           width: 100px;
         }
 
-        img {
-          position: relative;
-
-          width: 20px;
-          height: 10px;
-        }
       }
     }
 
@@ -231,6 +224,15 @@
     .form {
       margin-left: 20px;
       margin: 0 auto;
+
+      input {
+        border-color: black;
+        border-width: 1px;
+      }
+
+      textarea {
+        border: 1px solid black;
+      }
 
       .twoInput {
         width: 100%;
@@ -311,7 +313,3 @@
   }
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
