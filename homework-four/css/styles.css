@@ -7,7 +7,7 @@
 html,
 body {
   height: 100%;
-  font-family: "Gill Sans TTC", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -59,7 +59,6 @@ p {
   font-family: "Proxima Nova ScOsf", "Gill Sans", sans serif;
 }
 .tourComponent .infoHolder h1 {
-  font-style: italic;
   font-size: 60px;
   font-weight: 100;
   margin-bottom: 0;
@@ -68,11 +67,9 @@ p {
   font-size: 30px;
   font-weight: 100;
   padding-bottom: 30px;
-  font-style: italic;
 }
 .tourComponent .infoHolder a {
   font-size: 15px;
-  font-weight: bold;
   font-family: "Gill Sans", sans serif;
   border: 2px solid #79addc;
   background-color: #79addc;
@@ -113,8 +110,7 @@ footer .footerContent .mobileImgs {
   display: none;
 }
 footer .footerContent .copyright {
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 12px;
 }
 footer .footerContent .fa-brands {
   margin-right: 10px;
@@ -172,18 +168,17 @@ footer .footerContent .fa-brands {
   border-bottom: 2px solid white;
 }
 .hero nav .navLinks {
-  width: 440px;
+  width: 490px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 .hero nav .navLinks a {
+  font-family: "Gill Sans";
   font-size: 15px;
-  font-style: bold;
-  font-weight: 700;
   text-decoration: none;
   color: white;
-  margin: 0 10px;
+  padding: 0 10px;
   text-align: center;
 }
 .hero nav .navLinks p {
@@ -204,12 +199,10 @@ footer .footerContent .fa-brands {
 .hero .heroText h1 {
   font-family: "Proxima Nova ScOsf";
   font-size: 60px;
-  font-weight: 700;
-  font-style: italic;
+  font-weight: 100;
 }
 .hero .heroText p {
   font-size: 20px;
-  font-weight: bold;
   text-align: center;
   margin-bottom: 50px;
   font-style: italic;
@@ -241,18 +234,19 @@ footer .footerContent .fa-brands {
 .formArea h1 {
   font-size: 60px;
   font-family: "Proxima Nova ScOsf";
-  font-weight: 700;
+  font-weight: 100;
   margin-top: 20px;
-  font-style: italic;
 }
 .formArea .form label {
-  font-size: 15px;
-  font-weight: 600;
+  font-family: "Gill Sans";
+  font-size: 18px;
+  font-weight: 100;
 }
 .formArea .form input {
+  font-family: "Gill Sans";
   padding: 5px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 100;
   border: solid #79addc 2px;
   margin-bottom: 20px;
 }
@@ -281,16 +275,23 @@ footer .footerContent .fa-brands {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-height: 58px;
 }
 .formArea .form .threeInputs .oneOfThreeInputs {
   width: 200px;
-  min-height: 58px;
+  max-height: 58px;
+  position: relative;
 }
 .formArea .form .threeInputs .oneOfThreeInputs label {
   margin-right: 30px;
 }
 .formArea .form .threeInputs .oneOfThreeInputs input {
   width: 100px;
+}
+.formArea .form .threeInputs .oneOfThreeInputs img {
+  position: relative;
+  width: 20px;
+  height: 10px;
 }
 .formArea .form textarea {
   width: 818px;
@@ -316,8 +317,8 @@ footer .footerContent .fa-brands {
   margin-bottom: 50px;
 }
 .formArea .form .submit h1 {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 15px;
+  font-family: "Gill Sans";
 }
 
 @media (max-width: 860px) {
@@ -361,7 +362,7 @@ footer .footerContent .fa-brands {
   }
   .formArea .form .threeInputs {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
   }
   .formArea .form .threeInputs .oneOfThreeInputs {
     width: 30%;
@@ -394,7 +395,10 @@ footer .footerContent .fa-brands {
   }
 }
 @media (max-width: 980px) {
-  .navLinks {
+  nav img {
+    margin-left: 20px;
+  }
+  nav .navLinks {
     margin-right: 20px;
   }
 }
