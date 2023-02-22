@@ -1,0 +1,76 @@
+.siteWrapper {
+    max-width: $content-width;
+    margin: 90px auto 0 auto;
+
+    .aboutHeader {
+
+        margin-bottom: 95px;
+
+        h1 {
+            font-family: "Proxima Nova ScOsf";
+            font-weight: 100;
+            font-size: 60px;
+            margin-bottom: 38px;
+            letter-spacing: 5px;
+
+            span {
+                border-bottom: 2px solid black;
+            }
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .clientQuotes {
+
+        margin-bottom: 180px;
+
+        h1 {
+            font-family: "Proxima Nova ScOsf";
+            font-weight: 100;
+            font-size: 40px;
+            letter-spacing: 5px;
+            margin-bottom: 38px;
+
+            span {
+                border-bottom: 2px solid black;
+            }
+        }
+
+        .testimonial {
+            max-width: 730px;
+            margin-bottom: 38px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            img {
+                width: 260px;
+                height: 150px;
+                margin: 0 20px 0 0;
+            }
+
+            .quoteWrap {
+                width: 440px;
+
+                p {
+                    font-style: italic;
+                    max-width: 330px;
+                    text-align: left;
+                }
+
+                h2 {
+                    font-family: "Proxima Nova ScOsf";
+                    font-weight: 100;
+                    font-size: 20px;
+
+                    text-align: right;
+                    color: $site-blue;
+                }
+            }
+        }
+    }
+}
