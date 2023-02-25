@@ -30,11 +30,6 @@ p {
   margin-bottom: 16px;
 }
 
-@media (max-width: 860px) {
-  body {
-    background-color: #79addc;
-  }
-}
 .background-props {
   background-size: cover;
   background-position: center;
@@ -100,7 +95,7 @@ footer {
 }
 footer .footerContent {
   max-width: 980px;
-  height: 100px;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -131,6 +126,9 @@ nav .navLinks {
   align-items: center;
   justify-content: space-evenly;
 }
+nav .navLinks ul {
+  display: none;
+}
 nav .navLinks a {
   font-family: "Gill Sans";
   font-size: 15px;
@@ -144,6 +142,19 @@ nav .navLinks p {
   color: #79addc;
 }
 
+@media (max-width: 980px) {
+  nav img {
+    margin-left: 20px;
+  }
+  nav .navLinks {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 1050px) {
+  footer .footerContent {
+    width: 80%;
+  }
+}
 @media (max-width: 860px) {
   .tourComponent {
     width: 95%;
@@ -153,15 +164,48 @@ nav .navLinks p {
     width: 50%;
     height: 70%;
   }
-  footer {
-    background-color: black;
-    color: white;
+  nav .navLinks p,
+  nav .navLinks a {
+    width: 0px;
+    display: none;
   }
-  footer .footerContent {
-    width: 80%;
+  nav .navLinks {
+    display: block;
+    width: 100px;
+    margin: 0;
+  }
+  nav .navLinks ul {
+    display: inline;
+  }
+  nav .navLinks ul .fa-bars {
+    font-size: 24px;
+  }
+  nav .navLinks ul li {
+    display: none;
   }
 }
+ul:hover li {
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 50px;
+  background-color: #79addc;
+  border: 1px solid black;
+  top: 160px;
+  text-align: center;
+}
+ul:hover li a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
 @media (max-width: 630px) {
+  footer {
+    height: 200px;
+  }
   footer .footerContent {
     display: block;
   }
@@ -170,10 +214,11 @@ nav .navLinks p {
   }
   footer .footerContent .mobileImgs {
     width: 100%;
-    margin: 0 auto;
+    height: 100px;
+    margin: 20px auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   footer .footerContent .copyright {
     width: 100%;
@@ -348,10 +393,6 @@ nav .navLinks p {
     width: 90%;
     display: block;
   }
-  .navLinks p,
-  .navLinks a {
-    display: none;
-  }
   .hero .heroText {
     width: 80%;
   }
@@ -361,13 +402,6 @@ nav .navLinks p {
   .formArea .form {
     margin-left: 20px;
     margin: 0 auto;
-  }
-  .formArea .form input {
-    border-color: black;
-    border-width: 1px;
-  }
-  .formArea .form textarea {
-    border: 1px solid black;
   }
   .formArea .form .twoInput {
     width: 100%;
@@ -418,17 +452,7 @@ nav .navLinks p {
   .formArea .form .submit {
     width: 80%;
     margin: 20px auto 50px auto;
-    background-color: white;
-    border: 2px solid white;
     color: #79addc;
-  }
-}
-@media (max-width: 980px) {
-  nav img {
-    margin-left: 20px;
-  }
-  nav .navLinks {
-    margin-right: 20px;
   }
 }
 .siteWrapper {
@@ -468,20 +492,15 @@ nav .navLinks p {
   max-width: 730px;
   margin-bottom: 38px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .siteWrapper .clientQuotes .testimonial img {
-  width: 260px;
-  height: 150px;
+  max-width: 260px;
+  height: 100%;
   margin: 0 20px 0 0;
-}
-.siteWrapper .clientQuotes .testimonial .quoteWrap {
-  width: 440px;
 }
 .siteWrapper .clientQuotes .testimonial .quoteWrap p {
   font-style: italic;
-  max-width: 330px;
+  max-width: 400px;
   text-align: left;
 }
 .siteWrapper .clientQuotes .testimonial .quoteWrap h2 {
@@ -490,6 +509,46 @@ nav .navLinks p {
   font-size: 20px;
   text-align: right;
   color: #79addc;
+}
+
+@media (max-width: 1050px) {
+  .siteWrapper {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 600px) {
+  .siteWrapper .clientQuotes {
+    margin-bottom: 100px;
+  }
+  .siteWrapper .clientQuotes .testimonial {
+    width: 90%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 38px auto;
+  }
+  .siteWrapper .clientQuotes .testimonial img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto 20px auto;
+  }
+  .siteWrapper .clientQuotes .testimonial .quoteWrap {
+    width: 70%;
+  }
+  .siteWrapper .clientQuotes .testimonial .quoteWrap p {
+    width: 100%;
+  }
+}
+@media (max-width: 420px) {
+  .siteWrapper .clientQuotes {
+    margin-bottom: 100px;
+  }
+  .siteWrapper .clientQuotes .testimonial img {
+    width: 80%;
+  }
+  .siteWrapper .clientQuotes .testimonial .quoteWrap p {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,76 +1,128 @@
 .siteWrapper {
-    max-width: $content-width;
-    margin: 90px auto 0 auto;
+  max-width: $content-width;
+  margin: 90px auto 0 auto;
 
-    .aboutHeader {
+  .aboutHeader {
+    margin-bottom: 95px;
 
-        margin-bottom: 95px;
+    h1 {
+      font-family: "Proxima Nova ScOsf";
+      font-weight: 100;
+      font-size: 60px;
+      margin-bottom: 38px;
+      letter-spacing: 5px;
 
-        h1 {
-            font-family: "Proxima Nova ScOsf";
-            font-weight: 100;
-            font-size: 60px;
-            margin-bottom: 38px;
-            letter-spacing: 5px;
+      span {
+        border-bottom: 2px solid black;
+      }
+    }
 
-            span {
-                border-bottom: 2px solid black;
-            }
-        }
+    p {
+      font-size: 16px;
+    }
+  }
 
+  .clientQuotes {
+    margin-bottom: 180px;
+
+    h1 {
+      font-family: "Proxima Nova ScOsf";
+      font-weight: 100;
+      font-size: 40px;
+      letter-spacing: 5px;
+      margin-bottom: 38px;
+
+      span {
+        border-bottom: 2px solid black;
+      }
+    }
+
+    .testimonial {
+      max-width: 730px;
+      margin-bottom: 38px;
+
+      display: flex;
+
+      img {
+        max-width: 260px;
+        height: 100%;
+        margin: 0 20px 0 0;
+      }
+
+      .quoteWrap {
         p {
-            font-size: 16px;
+          font-style: italic;
+          max-width: 400px;
+          text-align: left;
         }
-    }
 
+        h2 {
+          font-family: "Proxima Nova ScOsf";
+          font-weight: 100;
+          font-size: 20px;
+
+          text-align: right;
+          color: $site-blue;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .siteWrapper {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .siteWrapper {
     .clientQuotes {
+      margin-bottom: 100px;
+      .testimonial {
+        width: 90%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto 38px auto;
 
-        margin-bottom: 180px;
-
-        h1 {
-            font-family: "Proxima Nova ScOsf";
-            font-weight: 100;
-            font-size: 40px;
-            letter-spacing: 5px;
-            margin-bottom: 38px;
-
-            span {
-                border-bottom: 2px solid black;
-            }
+        img {
+          width: 80%;
+          height: auto;
+          margin: 0 auto 20px auto;
         }
 
-        .testimonial {
-            max-width: 730px;
-            margin-bottom: 38px;
+        .quoteWrap {
+          width: 70%;
 
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            img {
-                width: 260px;
-                height: 150px;
-                margin: 0 20px 0 0;
-            }
-
-            .quoteWrap {
-                width: 440px;
-
-                p {
-                    font-style: italic;
-                    max-width: 330px;
-                    text-align: left;
-                }
-
-                h2 {
-                    font-family: "Proxima Nova ScOsf";
-                    font-weight: 100;
-                    font-size: 20px;
-
-                    text-align: right;
-                    color: $site-blue;
-                }
-            }
+          p {
+            width: 100%;
+          }
         }
+      }
     }
+  }
+}
+
+@media (max-width: 420px) {
+  .siteWrapper {
+    .clientQuotes {
+      margin-bottom: 100px;
+
+      .testimonial {
+        img {
+          width: 80%;
+        }
+
+        .quoteWrap {
+          p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
 }

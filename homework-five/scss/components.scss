@@ -72,7 +72,7 @@ footer {
 
   .footerContent {
     max-width: $content-width;
-    height: 100px;
+    height: 100%;
     margin: 0 auto;
 
     display: flex;
@@ -111,6 +111,10 @@ nav {
     align-items: center;
     justify-content: space-evenly;
 
+    ul {
+      display: none;
+    }
+
     a {
       font-family: "Gill Sans";
       font-size: 15px;
@@ -127,9 +131,25 @@ nav {
   }
 }
 
+@media (max-width: $content-width) {
+  nav {
+    img {
+      margin-left: 20px;
+    }
 
+    .navLinks {
+      margin-right: 20px;
+    }
+  }
+}
 
-
+@media (max-width: 1050px) {
+  footer {
+    .footerContent {
+      width: 80%;
+    }
+  }
+}
 
 @media (max-width: 860px) {
   .tourComponent {
@@ -142,19 +162,57 @@ nav {
     }
   }
 
-  footer {
-    background-color: black;
+  nav {
+    .navLinks p,
+    .navLinks a {
+      width: 0px;
+      display: none;
+    }
 
-    color: white;
+    .navLinks {
+      display: block;
+      width: 100px;
+      margin: 0;
 
-    .footerContent {
-      width: 80%;
+      ul {
+        display: inline;
+
+        .fa-bars {
+          font-size: 24px;
+        }
+
+        li {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+ul:hover {
+  li {
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background-color: $site-blue;
+    border: 1px solid black;
+    top: 160px;
+    text-align: center;
+
+    a {
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
     }
   }
 }
 
 @media (max-width: 630px) {
   footer {
+    height: 200px;
     .footerContent {
       display: block;
 
@@ -164,10 +222,11 @@ nav {
 
       .mobileImgs {
         width: 100%;
-        margin: 0 auto;
+        height: 100px;
+        margin: 20px auto;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
       }
 
       .copyright {

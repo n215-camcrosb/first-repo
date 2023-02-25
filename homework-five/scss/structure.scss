@@ -8,7 +8,6 @@
   src: url(../fonts/ProximaNovaScOsfExtraCondensed.ttf);
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -30,10 +29,4 @@ h5,
 h6,
 p {
   margin-bottom: 16px;
-}
-
-@media (max-width: 860px) {
-  body {
-    background-color: $site-blue;
-  }
 }
