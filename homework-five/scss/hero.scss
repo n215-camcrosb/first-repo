@@ -6,40 +6,9 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../images/hero.jpg);
 
-  nav {
-    max-width: $content-width;
-    height: 92px;
-    margin: 0 auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    border-bottom: 2px solid white;
-
-    .navLinks {
-      width: 490px;
-      //height: 42px;
-
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-
-      a {
-        font-family: "Gill Sans";
-        font-size: 15px;
-        text-decoration: none;
-        color: white;
-        padding: 0 10px;
-        text-align: center;
-      }
-
-      p {
-        margin: 0 10px;
-        color: $site-blue;
-      }
+    .navLinks a {
+      color: white;
     }
-  }
 
   .heroText {
     margin: 58px auto;

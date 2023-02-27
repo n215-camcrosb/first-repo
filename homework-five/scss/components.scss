@@ -104,6 +104,10 @@ nav {
 
   border-bottom: 2px solid black;
 
+  ul {
+    display: none;
+  }
+
   .navLinks {
     width: 490px;
 
@@ -111,9 +115,7 @@ nav {
     align-items: center;
     justify-content: space-evenly;
 
-    ul {
-      display: none;
-    }
+
 
     a {
       font-family: "Gill Sans";
@@ -163,28 +165,29 @@ nav {
   }
 
   nav {
-    .navLinks p,
-    .navLinks a {
-      width: 0px;
-      display: none;
+    ul {
+      display: block;
+      margin-right: 30px;
+
+      .fa-bars {
+        font-size: 24px;
+      }
+
+      li {
+        display: none;
+      }
     }
 
+/*     .navLinks p,
+    .navLinks a {
+      //width: 0px;
+      display: none;
+    } */
+
     .navLinks {
-      display: block;
-      width: 100px;
-      margin: 0;
-
-      ul {
-        display: inline;
-
-        .fa-bars {
-          font-size: 24px;
-        }
-
-        li {
-          display: none;
-        }
-      }
+      display: none;
+      //width: 100px;
+      //margin: 0;
     }
   }
 }

@@ -120,14 +120,14 @@ nav {
   justify-content: space-between;
   border-bottom: 2px solid black;
 }
+nav ul {
+  display: none;
+}
 nav .navLinks {
   width: 490px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-}
-nav .navLinks ul {
-  display: none;
 }
 nav .navLinks a {
   font-family: "Gill Sans";
@@ -164,23 +164,24 @@ nav .navLinks p {
     width: 50%;
     height: 70%;
   }
-  nav .navLinks p,
-  nav .navLinks a {
-    width: 0px;
+  nav {
+    /*     .navLinks p,
+        .navLinks a {
+          //width: 0px;
+          display: none;
+        } */
+  }
+  nav ul {
+    display: block;
+    margin-right: 30px;
+  }
+  nav ul .fa-bars {
+    font-size: 24px;
+  }
+  nav ul li {
     display: none;
   }
   nav .navLinks {
-    display: block;
-    width: 100px;
-    margin: 0;
-  }
-  nav .navLinks ul {
-    display: inline;
-  }
-  nav .navLinks ul .fa-bars {
-    font-size: 24px;
-  }
-  nav .navLinks ul li {
     display: none;
   }
 }
@@ -231,32 +232,8 @@ ul:hover li a {
   margin: 0 auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg);
 }
-.hero nav {
-  max-width: 980px;
-  height: 92px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 2px solid white;
-}
-.hero nav .navLinks {
-  width: 490px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.hero nav .navLinks a {
-  font-family: "Gill Sans";
-  font-size: 15px;
-  text-decoration: none;
+.hero .navLinks a {
   color: white;
-  padding: 0 10px;
-  text-align: center;
-}
-.hero nav .navLinks p {
-  margin: 0 10px;
-  color: #79addc;
 }
 .hero .heroText {
   margin: 58px auto;
