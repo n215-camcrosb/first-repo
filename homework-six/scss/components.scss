@@ -1,0 +1,270 @@
+.background-props {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tourComponent {
+  width: $tour-banner-width;
+  height: $tour-banner-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .infoHolder {
+    width: 95%;
+    height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: "Proxima Thin", "Gill Sans", sans serif;
+
+    h1 {
+      font-size: 60px;
+      text-align: center;
+      font-weight: 100;
+      margin-bottom: 12px;
+    }
+
+    .newZealandInfo {
+      font-size: 38px;
+      text-transform: capitalize;
+    }
+
+    p {
+      text-align: center;
+      font-size: 25px;
+      font-weight: 100;
+      padding-bottom: 30px;
+    }
+
+    a {
+      font-size: 15px;
+      font-family: "Gill Sans", sans serif;
+      border: 2px solid $site-blue;
+      background-color: $site-blue;
+      border-radius: 20px;
+      padding: 8px 26px;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.israelPic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour/tour-01.jpg);
+}
+
+.usaPic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour/tour-02.jpg);
+}
+
+.australiaPic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour/tour-03.jpg);
+}
+
+.newZealandPic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour/tour-04.jpg);
+}
+
+.francePic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour/tour-05.jpg);
+}
+
+.egyptPic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour/tour-06.jpg);
+}
+
+.japanPic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour/tour-07.jpg);
+}
+
+.canadaPic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour/tour-08.jpg);
+}
+
+.uaePic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/tour/tour-09.jpg);
+}
+
+footer {
+  max-width: $site-width;
+  height: 100px;
+  background-color: $site-blue;
+  margin: 0 auto;
+
+  color: white;
+
+  .footerContent {
+    max-width: $content-width;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .mobileImgs {
+      display: none;
+    }
+
+    .copyright {
+      font-size: 12px;
+    }
+
+    .fa-brands {
+      margin-right: 10px;
+    }
+  }
+}
+
+nav {
+  max-width: $content-width;
+  height: 92px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 2px solid black;
+
+  ul {
+    display: none;
+  }
+
+  .navLinks {
+    width: 490px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a {
+      font-family: "Gill Sans";
+      font-size: 15px;
+      text-decoration: none;
+      color: black;
+      padding: 0 10px;
+      text-align: center;
+    }
+
+    p {
+      margin: 0 10px;
+      color: $site-blue;
+    }
+  }
+}
+
+@media (max-width: $content-width) {
+  nav {
+    img {
+      margin-left: 20px;
+    }
+
+    .navLinks {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .tourComponent {
+    width: 95%;
+    margin: 0 auto 20px auto;
+
+    .infoHolder {
+      width: 50%;
+      height: 70%;
+    }
+  }
+
+  nav {
+    ul {
+      display: block;
+      margin-right: 30px;
+
+      .fa-bars {
+        font-size: 24px;
+      }
+
+      li {
+        display: none;
+      }
+    }
+
+    /*     .navLinks p,
+    .navLinks a {
+      //width: 0px;
+      display: none;
+    } */
+
+    .navLinks {
+      display: none;
+      //width: 100px;
+      //margin: 0;
+    }
+  }
+}
+
+ul:hover {
+  li {
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background-color: $site-blue;
+    border: 1px solid black;
+    top: 160px;
+    text-align: center;
+
+    a {
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  footer {
+    height: 200px;
+    .footerContent {
+      display: block;
+
+      .basicFooter {
+        display: none;
+      }
+
+      .mobileImgs {
+        width: 100%;
+        height: 100px;
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .copyright {
+        width: 100%;
+        height: 20px;
+        text-align: center;
+      }
+    }
+  }
+}
