@@ -226,16 +226,22 @@ ul:hover li a {
     text-align: center;
   }
 }
-.hero {
+.homePage .hero {
   max-width: 1280px;
   height: 500px;
   margin: 0 auto;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg);
 }
-.hero .navLinks a {
+.homePage .hero nav {
+  border-bottom: 2px solid white;
+}
+.homePage .hero nav .navLinks a {
   color: white;
 }
-.hero .heroText {
+.homePage .hero nav ul .fa-bars {
+  color: white;
+}
+.homePage .hero .heroText {
   margin: 58px auto;
   width: 714px;
   height: auto;
@@ -246,18 +252,18 @@ ul:hover li a {
   color: white;
   font-family: "Gill Sans", sans serif;
 }
-.hero .heroText h1 {
+.homePage .hero .heroText h1 {
   font-family: "Proxima Nova ScOsf";
   font-size: 60px;
   font-weight: 100;
 }
-.hero .heroText p {
+.homePage .hero .heroText p {
   font-size: 20px;
   text-align: center;
   margin-bottom: 50px;
   font-style: italic;
 }
-.hero .heroText a {
+.homePage .hero .heroText a {
   font-size: 15px;
   font-weight: bold;
   padding: 8px 8px;
@@ -266,8 +272,7 @@ ul:hover li a {
   text-decoration: none;
   color: white;
 }
-
-.promo {
+.homePage .promo {
   max-width: 818px;
   min-height: 304px;
   margin: -43px auto 0 auto;
@@ -275,24 +280,23 @@ ul:hover li a {
   align-items: center;
   justify-content: space-between;
 }
-
-.formArea {
+.homePage .formArea {
   max-width: 818px;
   min-height: 304px;
   margin: 0 auto;
 }
-.formArea h1 {
+.homePage .formArea h1 {
   font-size: 60px;
   font-family: "Proxima Nova ScOsf";
   font-weight: 100;
   margin-top: 20px;
 }
-.formArea .form label {
+.homePage .formArea .form label {
   font-family: "Gill Sans";
   font-size: 18px;
   font-weight: 100;
 }
-.formArea .form input {
+.homePage .formArea .form input {
   font-family: "Gill Sans";
   padding: 5px;
   font-size: 18px;
@@ -300,44 +304,44 @@ ul:hover li a {
   border: solid #79addc 2px;
   margin-bottom: 20px;
 }
-.formArea .form .twoInput {
+.homePage .formArea .form .twoInput {
   min-height: 58px;
   display: flex;
   justify-content: space-between;
 }
-.formArea .form .twoInput .left {
+.homePage .formArea .form .twoInput .left {
   width: 344px;
 }
-.formArea .form .twoInput .right {
+.homePage .formArea .form .twoInput .right {
   width: 453px;
 }
-.formArea .form .singleLineInput {
+.homePage .formArea .form .singleLineInput {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.formArea .form .singleLineInput .largeInput {
+.homePage .formArea .form .singleLineInput .largeInput {
   width: 698px;
   margin: 0;
 }
-.formArea .form .threeInputs {
+.homePage .formArea .form .threeInputs {
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 58px;
 }
-.formArea .form .threeInputs .oneOfThreeInputs {
+.homePage .formArea .form .threeInputs .oneOfThreeInputs {
   width: 200px;
   max-height: 58px;
 }
-.formArea .form .threeInputs .oneOfThreeInputs label {
+.homePage .formArea .form .threeInputs .oneOfThreeInputs label {
   margin-right: 30px;
 }
-.formArea .form .threeInputs .oneOfThreeInputs input {
+.homePage .formArea .form .threeInputs .oneOfThreeInputs input {
   width: 100px;
 }
-.formArea .form textarea {
+.homePage .formArea .form textarea {
   width: 818px;
   height: 192px;
   resize: vertical;
@@ -347,7 +351,7 @@ ul:hover li a {
   border: solid #79addc 2px;
   margin-bottom: 20px;
 }
-.formArea .form .submit {
+.homePage .formArea .form .submit {
   max-width: 818px;
   height: 60px;
   text-align: center;
@@ -360,78 +364,78 @@ ul:hover li a {
   justify-content: center;
   margin-bottom: 50px;
 }
-.formArea .form .submit h1 {
+.homePage .formArea .form .submit h1 {
   font-size: 15px;
   font-family: "Gill Sans";
 }
-
 @media (max-width: 860px) {
-  .promo {
+  .homePage .promo {
     width: 90%;
     display: block;
   }
-  .hero .heroText {
+  .homePage .hero .heroText {
     width: 80%;
   }
-  .formArea h1 {
+  .homePage .formArea h1 {
     margin-left: 20px;
   }
-  .formArea .form {
+  .homePage .formArea .form {
     margin-left: 20px;
     margin: 0 auto;
   }
-  .formArea .form .twoInput {
+  .homePage .formArea .form .twoInput {
     width: 100%;
     flex-direction: column;
   }
-  .formArea .form .twoInput .left {
+  .homePage .formArea .form .twoInput .left {
     width: 80%;
     margin: 0 auto 20px auto;
   }
-  .formArea .form .twoInput .right {
+  .homePage .formArea .form .twoInput .right {
     width: 80%;
     margin: 0 auto 20px auto;
   }
-  .formArea .form .singleLineInput {
+  .homePage .formArea .form .singleLineInput {
     width: 80%;
     margin: 0 auto 20px auto;
     justify-content: space-between;
   }
-  .formArea .form .singleLineInput .largeInput {
+  .homePage .formArea .form .singleLineInput .largeInput {
     width: 80%;
   }
-  .formArea .form .threeInputs {
+  .homePage .formArea .form .threeInputs {
     width: 80%;
     margin: 0 auto 20px auto;
   }
-  .formArea .form .threeInputs .oneOfThreeInputs {
+  .homePage .formArea .form .threeInputs .oneOfThreeInputs {
     width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .formArea .form .threeInputs .oneOfThreeInputs label {
+  .homePage .formArea .form .threeInputs .oneOfThreeInputs label {
     margin: 0 auto;
   }
-  .formArea .form .threeInputs .oneOfThreeInputs input {
+  .homePage .formArea .form .threeInputs .oneOfThreeInputs input {
     width: 80%;
   }
-  .formArea .form .textAreaDiv {
+  .homePage .formArea .form .textAreaDiv {
     width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
   }
-  .formArea .form .textAreaDiv textarea {
+  .homePage .formArea .form .textAreaDiv textarea {
     width: 100%;
     margin: 0 auto;
   }
-  .formArea .form .submit {
+  .homePage .formArea .form .submit {
     width: 80%;
     margin: 20px auto 50px auto;
     color: #79addc;
   }
 }
+
 .siteWrapper {
   max-width: 980px;
   margin: 90px auto 0 auto;

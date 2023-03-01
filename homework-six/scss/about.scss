@@ -1,8 +1,4 @@
-.contentWrapper {
-  max-width: $content-width;
-  margin: 0 auto;
-
-  .aboutHeader {
+.aboutHeader {
     margin: 90px 0 95px 0;
 
     h1 {
@@ -63,8 +59,8 @@
         }
       }
     }
-  }
 }
+
 
 @media (max-width: 1050px) {
   .siteWrapper {
