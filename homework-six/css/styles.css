@@ -569,4 +569,18 @@ ul:hover li a {
   margin: 45px auto;
 }
 
+.tourInformationPage .tourInfoHero {
+  max-width: 980px;
+  height: 415px;
+  margin: 45px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tourInformationPage .tourInfoHero h1 {
+  font-family: "Proxima Nova ScOsf";
+  font-size: 60px;
+  text-align: left;
+}
+
 /*# sourceMappingURL=styles.css.map */
