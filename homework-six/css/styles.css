@@ -574,9 +574,21 @@ ul:hover li a {
   justify-content: center;
 }
 .toursPage .promo {
-  margin: 45px auto;
+  max-width: 818px;
+  min-height: 304px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+@media (max-width: 860px) {
+  .promo {
+    width: 90%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
 .tourInformationPage .tourInfoHero {
   max-width: 980px;
   height: 415px;
@@ -589,16 +601,33 @@ ul:hover li a {
   font-family: "Proxima Thin";
   font-weight: 200;
   color: white;
-  font-size: 60px;
+  font-size: 46px;
   text-align: left;
   padding: 30px 0 0 30px;
+  text-transform: uppercase;
 }
 .tourInformationPage .tourInfoHero p {
+  text-transform: uppercase;
   font-family: "Proxima Thin";
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   text-align: right;
   margin: 0;
+}
+.tourInformationPage .bookNow {
+  margin: 0 auto 100px auto;
+  font-size: 15px;
+  width: 140px;
+  height: 40px;
+  background-color: #79addc;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tourInformationPage .bookNow a {
+  text-decoration: none;
+  color: white;
 }
 .tourInformationPage .threeImages {
   max-width: 980px;

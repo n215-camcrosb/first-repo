@@ -16,7 +16,23 @@
     align-items: center;
     justify-content: center;
   }
+
   .promo {
-    margin: 45px auto;
+    max-width: $tour-banners-maxW;
+    min-height: $tour-banner-height;
+
+    margin: 50px auto;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 860px) {
+  .promo {
+    width: 90%;
+    flex-direction: column;
+    margin: 0 auto;
   }
 }
