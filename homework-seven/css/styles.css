@@ -1,0 +1,781 @@
+@font-face {
+  font-family: "Gill Sans";
+  src: url(../fonts/Gill-Sans-Font-Family/Gill\ Sans.otf);
+}
+@font-face {
+  font-family: "Proxima Nova ScOsf";
+  src: url(../fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@font-face {
+  font-family: "Proxima Thin";
+  src: url(../fonts/Proxima-Nova-Thin.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.contentWrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.background-props {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tourComponent {
+  width: 236px;
+  height: 304px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tourComponent .infoHolder {
+  width: 95%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-family: "Proxima Thin", "Gill Sans", sans serif;
+}
+.tourComponent .infoHolder h1 {
+  font-size: 60px;
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 12px;
+}
+.tourComponent .infoHolder .newZealandInfo {
+  font-size: 38px;
+  text-transform: capitalize;
+}
+.tourComponent .infoHolder p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 100;
+  padding-bottom: 30px;
+}
+.tourComponent .infoHolder a {
+  font-size: 15px;
+  font-family: "Gill Sans", sans serif;
+  border: 2px solid #79addc;
+  background-color: #79addc;
+  border-radius: 20px;
+  padding: 8px 26px;
+  text-decoration: none;
+  color: white;
+}
+
+.israelPic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-01.jpg);
+}
+
+.usaPic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-02.jpg);
+}
+
+.australiaPic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-03.jpg);
+}
+
+.newZealandPic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-04.jpg);
+}
+
+.francePic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-05.jpg);
+}
+
+.egyptPic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-06.jpg);
+}
+
+.japanPic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-07.jpg);
+}
+
+.canadaPic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-08.jpg);
+}
+
+.uaePic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour/tour-09.jpg);
+}
+
+footer {
+  max-width: 1280px;
+  height: 100px;
+  background-color: #79addc;
+  margin: 0 auto;
+  color: white;
+}
+footer .footerContent {
+  max-width: 980px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footerContent .mobileImgs {
+  display: none;
+}
+footer .footerContent .copyright {
+  font-size: 12px;
+}
+footer .footerContent .fa-brands {
+  margin-right: 10px;
+}
+
+nav {
+  max-width: 980px;
+  height: 92px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+nav ul {
+  display: none;
+}
+nav .navLinks {
+  width: 490px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav .navLinks a {
+  font-family: "Gill Sans";
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+  text-align: center;
+}
+nav .navLinks p {
+  margin: 0 10px;
+  color: #79addc;
+}
+
+@media (max-width: 980px) {
+  nav img {
+    margin-left: 20px;
+  }
+  nav .navLinks {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 860px) {
+  .tourComponent {
+    width: 95%;
+    margin: 0 auto 20px auto;
+  }
+  .tourComponent .infoHolder {
+    width: 50%;
+    height: 70%;
+  }
+  nav {
+    /*     .navLinks p,
+    .navLinks a {
+      //width: 0px;
+      display: none;
+    } */
+  }
+  nav ul {
+    display: block;
+    margin-right: 30px;
+  }
+  nav ul .fa-bars {
+    font-size: 24px;
+  }
+  nav ul li {
+    display: none;
+  }
+  nav .navLinks {
+    display: none;
+  }
+}
+ul:hover li {
+  display: block;
+  position: relative;
+  width: 100px;
+  height: 50px;
+  background-color: #79addc;
+  border: 1px solid black;
+  top: 160px;
+  text-align: center;
+}
+ul:hover li a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+@media (max-width: 630px) {
+  footer {
+    height: 200px;
+  }
+  footer .footerContent {
+    display: block;
+  }
+  footer .footerContent .basicFooter {
+    display: none;
+  }
+  footer .footerContent .mobileImgs {
+    width: 100%;
+    height: 100px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  footer .footerContent .copyright {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+  }
+}
+.homePage .hero {
+  max-width: 1280px;
+  height: 500px;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero.jpg);
+}
+.homePage .hero nav {
+  border-bottom: 2px solid white;
+}
+.homePage .hero nav .navLinks a {
+  color: white;
+}
+.homePage .hero nav ul .fa-bars {
+  color: white;
+}
+.homePage .hero .heroText {
+  margin: 58px auto;
+  width: 714px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  font-family: "Gill Sans", sans serif;
+}
+.homePage .hero .heroText h1 {
+  font-family: "Proxima Nova ScOsf";
+  font-size: 60px;
+  font-weight: 100;
+}
+.homePage .hero .heroText p {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-style: italic;
+}
+.homePage .hero .heroText a {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 8px;
+  border: 2px solid #79addc;
+  background-color: #79addc;
+  text-decoration: none;
+  color: white;
+}
+.homePage .promo {
+  max-width: 818px;
+  min-height: 304px;
+  margin: -43px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.homePage .formArea {
+  max-width: 818px;
+  min-height: 304px;
+  margin: 0 auto;
+}
+.homePage .formArea h1 {
+  font-size: 60px;
+  font-family: "Proxima Nova ScOsf";
+  font-weight: 100;
+  margin-top: 20px;
+}
+.homePage .formArea .form label {
+  font-family: "Gill Sans";
+  font-size: 18px;
+  font-weight: 100;
+}
+.homePage .formArea .form input {
+  font-family: "Gill Sans";
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 100;
+  border: solid #79addc 2px;
+  margin-bottom: 20px;
+}
+.homePage .formArea .form .twoInput {
+  min-height: 58px;
+  display: flex;
+  justify-content: space-between;
+}
+.homePage .formArea .form .twoInput .left {
+  width: 344px;
+}
+.homePage .formArea .form .twoInput .right {
+  width: 453px;
+}
+.homePage .formArea .form .singleLineInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.homePage .formArea .form .singleLineInput .largeInput {
+  width: 698px;
+  margin: 0;
+}
+.homePage .formArea .form .threeInputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 58px;
+}
+.homePage .formArea .form .threeInputs .oneOfThreeInputs {
+  width: 200px;
+  max-height: 58px;
+}
+.homePage .formArea .form .threeInputs .oneOfThreeInputs label {
+  margin-right: 30px;
+}
+.homePage .formArea .form .threeInputs .oneOfThreeInputs input {
+  width: 100px;
+}
+.homePage .formArea .form textarea {
+  width: 818px;
+  height: 192px;
+  resize: vertical;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  border: solid #79addc 2px;
+  margin-bottom: 20px;
+}
+.homePage .formArea .form .submit {
+  max-width: 818px;
+  height: 60px;
+  text-align: center;
+  background-color: #79addc;
+  border: 2px solid #79addc;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.homePage .formArea .form .submit h1 {
+  font-size: 15px;
+  font-family: "Gill Sans";
+}
+@media (max-width: 860px) {
+  .homePage .promo {
+    width: 90%;
+    display: block;
+  }
+  .homePage .hero .heroText {
+    width: 80%;
+  }
+  .homePage .formArea h1 {
+    margin-left: 20px;
+  }
+  .homePage .formArea .form {
+    margin-left: 20px;
+    margin: 0 auto;
+  }
+  .homePage .formArea .form .twoInput {
+    width: 100%;
+    flex-direction: column;
+  }
+  .homePage .formArea .form .twoInput .left {
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+  .homePage .formArea .form .twoInput .right {
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+  .homePage .formArea .form .singleLineInput {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    justify-content: space-between;
+  }
+  .homePage .formArea .form .singleLineInput .largeInput {
+    width: 80%;
+  }
+  .homePage .formArea .form .threeInputs {
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+  .homePage .formArea .form .threeInputs .oneOfThreeInputs {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .homePage .formArea .form .threeInputs .oneOfThreeInputs label {
+    margin: 0 auto;
+  }
+  .homePage .formArea .form .threeInputs .oneOfThreeInputs input {
+    width: 80%;
+  }
+  .homePage .formArea .form .textAreaDiv {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .homePage .formArea .form .textAreaDiv textarea {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .homePage .formArea .form .submit {
+    width: 80%;
+    margin: 20px auto 50px auto;
+    color: #79addc;
+  }
+}
+
+.aboutPage {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.aboutPage .aboutHeader {
+  margin: 90px 0 95px 0;
+}
+.aboutPage .aboutHeader h1 {
+  font-family: "Proxima Thin";
+  font-size: 60px;
+  margin-bottom: 38px;
+  letter-spacing: 5px;
+}
+.aboutPage .aboutHeader h1 span {
+  border-bottom: 2px solid black;
+}
+.aboutPage .aboutHeader p {
+  font-size: 16px;
+}
+.aboutPage .clientQuotes {
+  margin-bottom: 180px;
+}
+.aboutPage .clientQuotes h1 {
+  font-family: "Proxima Thin";
+  font-size: 40px;
+  letter-spacing: 5px;
+  margin-bottom: 38px;
+}
+.aboutPage .clientQuotes h1 span {
+  border-bottom: 2px solid black;
+}
+.aboutPage .clientQuotes .testimonial {
+  max-width: 730px;
+  margin-bottom: 38px;
+  display: flex;
+}
+.aboutPage .clientQuotes .testimonial img {
+  max-width: 260px;
+  height: 100%;
+  margin: 0 20px 0 0;
+}
+.aboutPage .clientQuotes .testimonial .quoteWrap p {
+  font-style: italic;
+  max-width: 400px;
+  text-align: left;
+}
+.aboutPage .clientQuotes .testimonial .quoteWrap h2 {
+  font-family: "Proxima Thin";
+  font-size: 20px;
+  text-align: right;
+  color: #79addc;
+}
+
+@media (max-width: 1050px) {
+  .aboutPage {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 600px) {
+  .aboutPage .clientQuotes {
+    margin-bottom: 100px;
+  }
+  .aboutPage .clientQuotes .testimonial {
+    width: 90%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 38px auto;
+  }
+  .aboutPage .clientQuotes .testimonial img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto 20px auto;
+  }
+  .aboutPage .clientQuotes .testimonial .quoteWrap {
+    width: 70%;
+  }
+  .aboutPage .clientQuotes .testimonial .quoteWrap p {
+    width: 100%;
+  }
+}
+@media (max-width: 420px) {
+  .aboutPage .clientQuotes h1 {
+    font-size: 28px;
+  }
+  .aboutPage .clientQuotes .testimonial img {
+    width: 80%;
+  }
+  .aboutPage .clientQuotes .testimonial .quoteWrap p {
+    width: 100%;
+  }
+}
+.toursPage .toursHero {
+  max-width: 980px;
+  height: 200px;
+  margin: 50px auto 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tours-header.jpg);
+  color: white;
+  font-family: "Proxima Thin";
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toursPage .promo {
+  max-width: 818px;
+  min-height: 304px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 860px) {
+  .promo {
+    width: 90%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+.tourInformationPage .tourInfoHero {
+  max-width: 980px;
+  height: 415px;
+  margin: 45px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tourInformationPage .tourInfoHero h1 {
+  font-family: "Proxima Thin";
+  font-weight: 200;
+  color: white;
+  font-size: 46px;
+  text-align: left;
+  padding: 30px 0 0 30px;
+  text-transform: uppercase;
+}
+.tourInformationPage .tourInfoHero p {
+  text-transform: uppercase;
+  font-family: "Proxima Thin";
+  font-size: 20px;
+  color: white;
+  text-align: right;
+  margin: 0;
+}
+.tourInformationPage .bookNow {
+  margin: 0 auto 100px auto;
+  font-size: 15px;
+  width: 140px;
+  height: 40px;
+  background-color: #79addc;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tourInformationPage .bookNow a {
+  text-decoration: none;
+  color: white;
+}
+.tourInformationPage .threeImages {
+  max-width: 980px;
+  margin: 40px auto 30px auto;
+}
+.tourInformationPage .threeImages .mobileSlider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tourInformationPage .threeImages img {
+  width: 298px;
+  height: 348px;
+}
+.tourInformationPage .tourBlog {
+  max-width: 980px;
+  margin: 0 auto 70px auto;
+}
+.tourInformationPage .tourBlog .blogImages {
+  display: none;
+}
+.tourInformationPage .tourBlog h1 {
+  font-size: 60px;
+  font-weight: 200;
+  font-family: "Proxima Thin";
+  margin-bottom: 38px;
+}
+.tourInformationPage .tourBlog h1 span {
+  border-bottom: 2px solid black;
+}
+
+@keyframes tourSlides {
+  0%, 100% {
+    left: 0;
+  }
+  25% {
+    left: -50%;
+  }
+  50% {
+    left: -100%;
+  }
+  75% {
+    left: -150%;
+  }
+  90% {
+    left: -180%;
+  }
+  94% {
+    left: -180%;
+  }
+}
+@media (max-width: 980px) {
+  .tourInformationPage .tourInfoHero p {
+    margin-right: 10px;
+  }
+  .tourInformationPage .threeImages {
+    display: none;
+  }
+  .tourInformationPage .tourBlog {
+    width: 80%;
+  }
+  .tourInformationPage .tourBlog .blogImages {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 40px auto;
+    height: 300px;
+    overflow: hidden;
+  }
+  .tourInformationPage .tourBlog .blogImages img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: start;
+  }
+}
+@media (max-width: 600px) {
+  .tourInformationPage .threeImages {
+    width: 300px;
+    height: 400px;
+    border: 4px solid black;
+    position: relative;
+    overflow: hidden;
+    display: block;
+  }
+  .tourInformationPage .threeImages .mobileSlider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: tourSlides 10s linear infinite;
+  }
+  .tourInformationPage .threeImages img {
+    width: 300px;
+    height: 400px;
+    align-self: center;
+    float: left;
+  }
+  .tourInformationPage .tourBlog .blogImages {
+    display: none;
+  }
+}
+.blogPage {
+  max-width: 1280px;
+  height: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blogPage .post {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+}
+.blogPage .post .left {
+  width: 60px;
+  margin-right: 20px;
+}
+.blogPage .post .left .dateBox {
+  width: 60px;
+  height: 60px;
+  background-color: #79addc;
+}
+.blogPage .post .right {
+  width: 900px;
+}
+.blogPage .post .right .image {
+  width: 900px;
+  height: 260px;
+  margin-bottom: 20px;
+}
+.blogPage .post .right .image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.blogPage .post .right p {
+  font-size: 15px;
+  margin-bottom: 11px;
+  width: 240px;
+}
+.blogPage .post .right .blueText {
+  color: #79addc;
+  font-size: 13px;
+  width: 380px;
+}
+
+/*# sourceMappingURL=styles.css.map */
