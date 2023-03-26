@@ -733,16 +733,20 @@ ul:hover li a {
   }
 }
 .blogPage {
-  max-width: 1280px;
-  height: 860px;
+  max-width: 980px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+}
+.blogPage h2 {
+  margin: 55px 0 30px 0;
+  width: 110px;
+  font-size: 30px;
+  font-family: "Proxima Thin";
+  letter-spacing: 3px;
+  border-bottom: 2px solid black;
 }
 .blogPage .post {
   max-width: 980px;
-  margin: 0 auto;
+  margin: 0 auto 100px auto;
   display: flex;
 }
 .blogPage .post .left {
@@ -754,11 +758,25 @@ ul:hover li a {
   height: 60px;
   background-color: #79addc;
 }
+.blogPage .post .left .dateBox h3 {
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  padding: 10px 0 0 0;
+  margin: 0;
+  color: white;
+}
+.blogPage .post .left .dateBox p {
+  font-weight: lighter;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+}
 .blogPage .post .right {
   width: 900px;
 }
 .blogPage .post .right .image {
-  width: 900px;
+  width: 100%;
   height: 260px;
   margin-bottom: 20px;
 }
@@ -776,6 +794,43 @@ ul:hover li a {
   color: #79addc;
   font-size: 13px;
   width: 380px;
+}
+
+@media (max-width: 1000px) {
+  .blogPage h2 {
+    margin-left: 20px;
+  }
+  .blogPage .post .left {
+    margin-left: 20px;
+  }
+  .blogPage .post .right {
+    width: 80%;
+  }
+}
+@media (max-width: 520px) {
+  .blogPage .post .right {
+    margin-right: 20px;
+  }
+  .blogPage .post .right p {
+    width: 200px;
+    font-size: 12px;
+  }
+  .blogPage .post .right .blueText {
+    font-size: 10px;
+    width: 160px;
+  }
+}
+.contactPage {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.contactPage h1 {
+  font-family: "Proxima Thin";
+  font-size: 30px;
+  margin: 55px 0 50px 0;
+}
+.contactPage h1 span {
+  border-bottom: 2px solid black;
 }
 
 /*# sourceMappingURL=styles.css.map */

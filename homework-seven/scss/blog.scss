@@ -1,16 +1,20 @@
 .blogPage {
-  max-width: $site-width;
-  height: 860px;
+  max-width: $content-width;
   margin: 0 auto;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
+  h2 {
+    margin: 55px 0 30px 0;
+    width: 110px;
+    font-size: 30px;
+    font-family: "Proxima Thin";
+    letter-spacing: 3px;
+    border-bottom: 2px solid black;
+  }
 
   .post {
-    // width: 100%;
     max-width: $content-width;
-    margin: 0 auto;
+    margin: 0 auto 100px auto;
 
     display: flex;
 
@@ -22,6 +26,22 @@
         width: 60px;
         height: 60px;
         background-color: #79addc;
+
+        h3 {
+          font-weight: bold;
+          font-size: 22px;
+          text-align: center;
+          padding: 10px 0 0 0;
+          margin: 0;
+          color: white;
+        }
+        
+        p {
+          font-weight: lighter;
+          font-size: 12px;
+          text-align: center;
+          color: white;
+        }
       }
     }
 
@@ -29,7 +49,7 @@
       width: 900px;
 
       .image {
-        width: 900px;
+        width: 100%;
         height: 260px;
         margin-bottom: 20px;
 
@@ -50,6 +70,44 @@
         color: #79addc;
         font-size: 13px;
         width: 380px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .blogPage {
+    h2 {
+      margin-left: 20px;
+    }
+
+    .post {
+      .left {
+        margin-left: 20px;
+      }
+
+      .right {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .blogPage {
+    .post {
+      .right {
+        margin-right: 20px;
+
+        p {
+          width: 200px;
+          font-size: 12px;
+        }
+
+        .blueText {
+          font-size: 10px;
+          width: 160px;
+        }
       }
     }
   }
