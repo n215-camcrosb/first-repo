@@ -832,5 +832,65 @@ ul:hover li a {
 .contactPage h1 span {
   border-bottom: 2px solid black;
 }
+.contactPage .contactContent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 380px;
+}
+.contactPage .contactContent .travelFlyMap iframe {
+  margin-bottom: 34px;
+}
+.contactPage .contactContent .travelFlyMap p {
+  font-size: 18px;
+  font-weight: lighter;
+  margin-bottom: 0;
+  letter-spacing: 3px;
+}
+.contactPage .contactContent .contactForm {
+  width: 530px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contactPage .contactContent .contactForm input {
+  width: 530px;
+  height: 60px;
+  display: block;
+  background-color: #F5F5F5;
+  border: none;
+  margin-bottom: 21px;
+  padding-left: 21px;
+  font-size: 16px;
+}
+.contactPage .contactContent .contactForm input:focus {
+  outline: none;
+}
+.contactPage .contactContent .contactForm textarea {
+  width: 530px;
+  background-color: #F5F5F5;
+  border: none;
+  margin-bottom: 20px;
+  padding: 21px;
+  font-size: 16px;
+}
+.contactPage .contactContent .contactForm textarea:focus {
+  outline: none;
+}
+.contactPage .contactContent .contactForm .submitButton {
+  width: 167px;
+  height: 60px;
+  background-color: #79addc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactPage .contactContent .contactForm .submitButton a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+}
 
 /*# sourceMappingURL=styles.css.map */

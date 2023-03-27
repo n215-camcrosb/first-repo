@@ -14,4 +14,84 @@
             border-bottom: 2px solid black;
         }
     }
+
+    .contactContent {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: 380px;
+
+        .travelFlyMap {
+            iframe {
+                margin-bottom: 34px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: lighter;
+                margin-bottom: 0;
+                letter-spacing: 3px;
+            }
+        }
+
+        .contactForm {
+            width: 530px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            input {
+                width: 530px;
+                height: 60px;
+                display: block;
+                background-color: $contact-grey;
+                border: none;
+
+                margin-bottom: 21px;
+                padding-left: 21px;
+
+                font-size: 16px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            textarea {
+                width: 530px;
+                background-color: $contact-grey;
+                border: none;
+
+                margin-bottom: 20px;
+                padding: 21px;
+
+                font-size: 16px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .submitButton {
+                width: 167px;
+                height: 60px;
+
+                background-color: $site-blue;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                a {
+                    color: white;
+                    font-size: 16px;
+                    text-decoration: none;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
