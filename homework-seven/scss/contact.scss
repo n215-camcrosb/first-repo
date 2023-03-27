@@ -21,7 +21,7 @@
         align-items: center;
         justify-content: space-between;
 
-        margin-bottom: 380px;
+        margin: 0 0 380px 0;
 
         .travelFlyMap {
             iframe {
@@ -38,6 +38,8 @@
 
         .contactForm {
             width: 530px;
+
+            align-self: baseline;
 
             display: flex;
             flex-direction: column;
@@ -62,6 +64,7 @@
 
             textarea {
                 width: 530px;
+                height: 200px;
                 background-color: $contact-grey;
                 border: none;
 
@@ -69,6 +72,7 @@
                 padding: 21px;
 
                 font-size: 16px;
+                resize: none;
 
                 &:focus {
                     outline: none;
@@ -88,8 +92,91 @@
                 a {
                     color: white;
                     font-size: 16px;
+                    letter-spacing: 2px;
                     text-decoration: none;
                     text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .contactPage {
+
+        h1 {
+            margin-left: 20px;
+        }
+        .contactContent {
+            width: 90%;
+            margin: 0 auto 380px auto;
+
+            .travelFlyMap {
+                margin-left: 20px;
+
+                iframe {
+                    width: 350px;
+                }
+    
+
+            }
+
+            .contactForm {
+                width: 400px;
+
+                input {
+                    width: 400px;
+                }
+
+                textarea {
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .contactPage {
+        .contactContent {
+            flex-direction: column-reverse;
+            margin-bottom: 0;
+
+            .travelFlyMap {
+                width: 90%;
+                margin: 0 auto 50px auto;
+
+                iframe {
+                    width: 100%;
+                }
+            }
+
+            .contactForm {
+                width: 90%;
+                margin: 0 auto 50px auto;
+
+                input {
+                    width: 100%;
+                }
+
+                textarea {
+                    width: 100%;
+                }
+
+                .submitButton {
+                    align-self: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .contactPage {
+        .contactContent {
+            .travelFlyMap {
+                p {
+                    font-size: 14px;
                 }
             }
         }

@@ -126,7 +126,7 @@ p {
 }
 
 footer {
-  max-width: 1280px;
+  width: 100%;
   height: 100px;
   background-color: #79addc;
   margin: 0 auto;
@@ -732,6 +732,112 @@ ul:hover li a {
     display: none;
   }
 }
+.offersPage {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.offersPage h1 {
+  margin: 55px 0 35px 0;
+  font-family: "Proxima Thin";
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.offersPage h1 span {
+  border-bottom: 2px solid black;
+}
+.offersPage .offer {
+  width: 600px;
+  display: flex;
+  margin-bottom: 60px;
+}
+.offersPage .offer .image {
+  width: 200px;
+  height: 300px;
+  margin-right: 20px;
+}
+.offersPage .offer .image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.offersPage .offer .info {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.offersPage .offer .info h1 {
+  font-family: "Proxima Thin";
+  font-size: 26px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+.offersPage .offer .info h1 span {
+  border-bottom: 2px solid black;
+}
+.offersPage .offer .info h1 .discount {
+  margin-left: 10px;
+  border: none;
+  color: #FF7D38;
+  font-size: 18px;
+}
+.offersPage .offer .info p {
+  width: 300px;
+  font-size: 16px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 100px;
+}
+.offersPage .offer .info .learnMore {
+  width: 130px;
+  height: 40px;
+  background-color: #79addc;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.offersPage .offer .info .learnMore a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+}
+
+@media (max-width: 1000px) {
+  .offersPage h1 {
+    margin-left: 20px;
+  }
+  .offersPage .offer {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 630px) {
+  .offersPage .offer {
+    width: 90%;
+    flex-direction: column;
+  }
+  .offersPage .offer .image {
+    width: 100%;
+    height: 200px;
+    margin: 0 0 20px 0;
+  }
+  .offersPage .offer .info {
+    width: 100%;
+  }
+  .offersPage .offer .info h1 {
+    width: 100%;
+  }
+  .offersPage .offer .info h1 .discount {
+    display: block;
+    margin: 10px 0;
+  }
+  .offersPage .offer .info p {
+    width: 250px;
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+}
 .blogPage {
   max-width: 980px;
   margin: 0 auto;
@@ -837,7 +943,7 @@ ul:hover li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 380px;
+  margin: 0 0 380px 0;
 }
 .contactPage .contactContent .travelFlyMap iframe {
   margin-bottom: 34px;
@@ -850,6 +956,7 @@ ul:hover li a {
 }
 .contactPage .contactContent .contactForm {
   width: 530px;
+  align-self: baseline;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -869,11 +976,13 @@ ul:hover li a {
 }
 .contactPage .contactContent .contactForm textarea {
   width: 530px;
+  height: 200px;
   background-color: #F5F5F5;
   border: none;
   margin-bottom: 20px;
   padding: 21px;
   font-size: 16px;
+  resize: none;
 }
 .contactPage .contactContent .contactForm textarea:focus {
   outline: none;
@@ -889,8 +998,65 @@ ul:hover li a {
 .contactPage .contactContent .contactForm .submitButton a {
   color: white;
   font-size: 16px;
+  letter-spacing: 2px;
   text-decoration: none;
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .contactPage h1 {
+    margin-left: 20px;
+  }
+  .contactPage .contactContent {
+    width: 90%;
+    margin: 0 auto 380px auto;
+  }
+  .contactPage .contactContent .travelFlyMap {
+    margin-left: 20px;
+  }
+  .contactPage .contactContent .travelFlyMap iframe {
+    width: 350px;
+  }
+  .contactPage .contactContent .contactForm {
+    width: 400px;
+  }
+  .contactPage .contactContent .contactForm input {
+    width: 400px;
+  }
+  .contactPage .contactContent .contactForm textarea {
+    width: 400px;
+  }
+}
+@media (max-width: 860px) {
+  .contactPage .contactContent {
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+  }
+  .contactPage .contactContent .travelFlyMap {
+    width: 90%;
+    margin: 0 auto 50px auto;
+  }
+  .contactPage .contactContent .travelFlyMap iframe {
+    width: 100%;
+  }
+  .contactPage .contactContent .contactForm {
+    width: 90%;
+    margin: 0 auto 50px auto;
+  }
+  .contactPage .contactContent .contactForm input {
+    width: 100%;
+  }
+  .contactPage .contactContent .contactForm textarea {
+    width: 100%;
+  }
+  .contactPage .contactContent .contactForm .submitButton {
+    align-self: center;
+  }
+}
+@media (max-width: 350px) {
+  .contactPage .contactContent .travelFlyMap p {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
