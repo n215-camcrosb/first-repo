@@ -906,6 +906,9 @@ ul:hover li a {
   .blogPage h2 {
     margin-left: 20px;
   }
+  .blogPage .post {
+    margin-bottom: 40px;
+  }
   .blogPage .post .left {
     margin-left: 20px;
   }
@@ -914,8 +917,12 @@ ul:hover li a {
   }
 }
 @media (max-width: 520px) {
+  .blogPage .post {
+    flex-direction: column;
+  }
   .blogPage .post .right {
-    margin-right: 20px;
+    width: 90%;
+    margin: 10px auto;
   }
   .blogPage .post .right p {
     width: 200px;
@@ -943,7 +950,7 @@ ul:hover li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 0 380px 0;
+  margin: 0 0 100px 0;
 }
 .contactPage .contactContent .travelFlyMap iframe {
   margin-bottom: 34px;
