@@ -1,0 +1,51 @@
+nav {
+  background-color: $site-brown;
+  max-width: $site-width;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .prettierRooms {
+    font-size: 30px;
+    border-bottom: 2px solid $site-white;
+    color: $site-white;
+    margin: 0 0 0 20px;
+  }
+
+  .navLinks {
+    width: 500px;
+    margin-right: 20px;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+      color: $site-white;
+      font-size: 30px;
+      text-decoration: none;
+    }
+  }
+}
+
+.backgroundImages {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1540px) {
+  nav {
+    .prettierRooms {
+      font-size: 24px;
+    }
+    .navLinks {
+      width: 400px;
+
+      a {
+        font-size: 24px;
+      }
+    }
+  }
+}

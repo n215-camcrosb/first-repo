@@ -1,0 +1,64 @@
+.homePage {
+  max-width: $site-width;
+  height: calc(100% - 100px);
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/sidekix-media-WgkA3CSFrjc-unsplash.jpg);
+
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+
+  .heroText {
+    width: 800px;
+    margin-left: 20px;
+    margin-top: 200px;
+    color: $site-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-size: 76px;
+      margin-bottom: 32px;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 30px;
+      margin-bottom: 32px;
+    }
+
+    .ourBlog {
+      width: 280px;
+      height: 51px;
+
+      border: 4px solid $site-white;
+      align-self: center;
+
+      margin-right: 170px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+      }
+    }
+  }
+
+  .copyright {
+    width: 100%;
+    height: 80px;
+    align-self: center;
+    text-align: center;
+
+    margin: 100px auto 0 auto;
+
+    color: $site-white;
+    font-size: 25px;
+  }
+}

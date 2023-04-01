@@ -1,0 +1,92 @@
+.contactPage {
+  max-width: $site-width;
+  height: calc(100% - 100px);
+
+  display: flex;
+  justify-content: space-between;
+
+  .contactHero {
+    width: calc($site-width / 2);
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../images/pexels-cup-of-couple-6177573.jpg);
+  }
+
+  .contactUs {
+    width: calc($site-width / 2);
+    padding: 0 80px;
+
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      align-self: left;
+      font-size: 42px;
+      margin-top: 70px;
+    }
+
+    .contactForm {
+      align-self: center;
+
+      p {
+        font-size: 22px;
+        margin: 15px 0;
+      }
+
+      input {
+        width: 418px;
+        height: 70px;
+        border: 1px solid $site-brown;
+      }
+
+      .submit {
+        width: 170px;
+        height: 50px;
+        margin: 40px auto 0 auto;
+        border: 1px solid $site-brown;
+        border-radius: 25px;
+        background-color: $site-brown;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+          font-size: 22px;
+          color: $site-white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1540px) {
+  .contactPage {
+    .contactUs {
+      h1 {
+        font-size: 34px;
+      }
+
+      .contactForm {
+        p {
+          font-size: 16px;
+        }
+
+        input {
+          width: calc(418px / 1.5);
+          height: calc(70px / 1.5);
+        }
+
+        .submit {
+          width: calc(170px / 1.5);
+          height: calc(50px / 1.5);
+
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
