@@ -50,6 +50,12 @@ nav .navLinks a {
   text-decoration: none;
 }
 
+#site {
+  max-width: 1920px;
+  height: calc(100% - 100px);
+  margin: 0 auto;
+}
+
 .backgroundImages {
   background-position: center;
   background-repeat: no-repeat;
@@ -105,7 +111,7 @@ ul:hover li a {
 .homePage {
   max-width: 1920px;
   margin: 0 auto;
-  height: calc(100% - 100px);
+  height: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/sidekix-media-WgkA3CSFrjc-unsplash.jpg);
   display: flex;
   flex-direction: column;
@@ -191,7 +197,7 @@ ul:hover li a {
 .aboutPage {
   margin: 0 auto;
   max-width: 1920px;
-  height: calc(100% - 100px);
+  height: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -240,7 +246,7 @@ ul:hover li a {
 .blogPage {
   margin: 0 auto;
   max-width: 1920px;
-  height: calc(100% - 100px);
+  height: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -318,7 +324,7 @@ ul:hover li a {
 .contactPage {
   margin: 0 auto;
   max-width: 1920px;
-  height: calc(100% - 100px);
+  height: 100%;
   display: flex;
   justify-content: space-between;
 }
