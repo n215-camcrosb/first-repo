@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+nav {
+  margin: 0 auto;
+  background-color: #471f00;
+  max-width: 1920px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  display: none;
+}
+nav .prettierRooms {
+  font-size: 30px;
+  border-bottom: 2px solid #ffffff;
+  color: #ffffff;
+  margin: 0 0 0 20px;
+}
+nav .navLinks {
+  width: 500px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav .navLinks a {
+  color: #ffffff;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+#site {
+  max-width: 1920px;
+  height: calc(100% - 100px);
+  margin: 0 auto;
+}
+
+.backgroundImages {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1540px) {
+  nav .prettierRooms {
+    font-size: 24px;
+  }
+  nav .navLinks {
+    width: 400px;
+  }
+  nav .navLinks a {
+    font-size: 24px;
+  }
+}
+@media (max-width: 650px) {
+  nav ul {
+    display: block;
+    margin-right: 30px;
+  }
+  nav ul .fa-bars {
+    font-size: 26px;
+    color: white;
+  }
+  nav ul li {
+    display: none;
+  }
+  nav .navLinks {
+    display: none;
+  }
+}
+ul:hover li {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  background-color: #7c6659;
+  border: 1px solid black;
+  top: 80px;
+  text-align: center;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul:hover li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.homePage {
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/sidekix-media-WgkA3CSFrjc-unsplash.jpg);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.homePage .heroText {
+  width: 800px;
+  margin-left: 20px;
+  margin-top: 270px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.homePage .heroText h1 {
+  font-size: 76px;
+  margin-bottom: 32px;
+  font-weight: 400;
+}
+.homePage .heroText p {
+  font-size: 30px;
+  margin-bottom: 32px;
+}
+.homePage .heroText .ourBlog {
+  width: 280px;
+  height: 51px;
+  border: 4px solid #ffffff;
+  align-self: center;
+  margin-right: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homePage .heroText .ourBlog a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+.homePage .copyright {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  align-self: center;
+  text-align: center;
+  bottom: 0;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+@media (max-width: 820px) {
+  .homePage .heroText {
+    width: 90%;
+    padding: 20px;
+    align-items: center;
+  }
+  .homePage .heroText p {
+    text-align: center;
+  }
+  .homePage .heroText .ourBlog {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 685px) {
+  .homePage .heroText h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .homePage .heroText p {
+    font-size: 22px;
+  }
+  .homePage .heroText .ourBlog {
+    width: 40%;
+    min-width: 120px;
+  }
+  .homePage .heroText .ourBlog a {
+    font-size: 22px;
+  }
+  .homePage .copyright {
+    width: 90%;
+    font-size: 22px;
+  }
+}
+.aboutPage {
+  margin: 0 auto;
+  max-width: 1920px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.aboutPage .aboutHero {
+  width: 960px;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/spacejoy-LhOJl195TWc-unsplash.jpg);
+}
+.aboutPage .aboutUs {
+  width: 960px;
+  padding: 0 70px;
+}
+.aboutPage .aboutUs h1 {
+  font-size: 42px;
+  margin: 109px 0 69px 0;
+}
+.aboutPage .aboutUs p {
+  font-size: 22px;
+}
+
+@media (max-width: 1540px) {
+  .aboutPage .aboutUs h1 {
+    font-size: 34px;
+  }
+  .aboutPage .aboutUs p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 650px) {
+  .aboutPage {
+    flex-direction: column;
+    justify-content: start;
+  }
+  .aboutPage .aboutHero {
+    width: 100%;
+    height: 300px;
+  }
+  .aboutPage .aboutUs {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .aboutPage .aboutUs h1 {
+    margin: 50px 0 30px 0;
+  }
+}
+.blogPage {
+  margin: 0 auto;
+  max-width: 1920px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.blogPage .blogImages {
+  width: 960px;
+  height: 100%;
+  background-color: #707070;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.blogPage .blogImages img {
+  width: 540px;
+  height: 360px;
+  border: 2px solid #471f00;
+}
+.blogPage .theBlog {
+  width: 960px;
+  padding: 0 70px 0 50px;
+}
+.blogPage .theBlog .blogPosts .mobileImage {
+  display: none;
+}
+.blogPage .theBlog .blogPosts h1 {
+  font-size: 42px;
+  margin: 50px 0;
+}
+.blogPage .theBlog .blogPosts p {
+  font-size: 22px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1540px) {
+  .blogPage .blogImages img {
+    width: 360px;
+    height: 240px;
+  }
+  .blogPage .theBlog .blogPosts h1 {
+    font-size: 34px;
+    margin: 50px 0 20px 0;
+  }
+  .blogPage .theBlog .blogPosts p {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 840px) {
+  .blogPage .blogImages {
+    display: none;
+  }
+  .blogPage .theBlog {
+    width: 100%;
+    padding: 0;
+    padding: 0 20px;
+  }
+  .blogPage .theBlog .blogPosts .mobileImage {
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin: 40px auto 0 auto;
+  }
+  .blogPage .theBlog .blogPosts .mobileImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .blogPage .theBlog .blogPosts h1 {
+    margin-top: 30px;
+  }
+  .blogPage .theBlog .blogPosts p {
+    margin-bottom: 30px;
+  }
+}
+.contactPage {
+  margin: 0 auto;
+  max-width: 1920px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contactPage .contactHero {
+  width: 960px;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/pexels-cup-of-couple-6177573.jpg);
+}
+.contactPage .contactUs {
+  width: 960px;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+}
+.contactPage .contactUs h1 {
+  align-self: left;
+  font-size: 42px;
+  margin-top: 70px;
+}
+.contactPage .contactUs .contactForm {
+  align-self: center;
+}
+.contactPage .contactUs .contactForm p {
+  font-size: 22px;
+  margin: 15px 0;
+}
+.contactPage .contactUs .contactForm input {
+  width: 418px;
+  height: 70px;
+  border: 1px solid #471f00;
+}
+.contactPage .contactUs .contactForm .submit {
+  width: 170px;
+  height: 50px;
+  margin: 40px auto 0 auto;
+  border: 1px solid #471f00;
+  border-radius: 25px;
+  background-color: #471f00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactPage .contactUs .contactForm .submit a {
+  font-size: 22px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media (max-width: 1540px) {
+  .contactPage .contactUs h1 {
+    font-size: 34px;
+  }
+  .contactPage .contactUs .contactForm p {
+    font-size: 16px;
+  }
+  .contactPage .contactUs .contactForm input {
+    width: 278.6666666667px;
+    height: 46.6666666667px;
+  }
+  .contactPage .contactUs .contactForm .submit {
+    width: 113.3333333333px;
+    height: 33.3333333333px;
+  }
+  .contactPage .contactUs .contactForm .submit a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 650px) {
+  .contactPage {
+    flex-direction: column;
+    justify-content: start;
+  }
+  .contactPage .contactHero {
+    width: 100%;
+    height: 300px;
+  }
+  .contactPage .contactUs {
+    width: 100%;
+    padding: 0 30px;
+  }
+  .contactPage .contactUs .contactForm {
+    width: 100%;
+  }
+  .contactPage .contactUs .contactForm input {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+  .contactPage .contactUs .contactForm .submit {
+    margin-bottom: 40px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
