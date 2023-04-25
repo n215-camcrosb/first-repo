@@ -1,9 +1,14 @@
+.pageContainer {
+  position: relative;
+  min-height: 100vh;
+}
+
 .contentWrapper {
   width: 100%;
   height: auto;
+  padding-bottom: 150px;
   margin: 0 auto;
 }
-
 
 .background-props {
   background-size: cover;
@@ -110,7 +115,9 @@ footer {
   width: 100%;
   height: 100px;
   background-color: $site-blue;
-  margin: 50px auto 0 auto;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
 
   color: white;
 
@@ -142,6 +149,8 @@ nav {
   max-width: $content-width;
   height: 92px;
   margin: 0 auto;
+
+  z-index: 9;
 
   display: flex;
   align-items: center;
@@ -247,6 +256,7 @@ ul:hover {
   li {
     display: block;
     position: relative;
+    padding-top: 15px;
     width: 100px;
     height: 50px;
     background-color: $site-blue;
@@ -265,6 +275,10 @@ ul:hover {
 }
 
 @media (max-width: 630px) {
+  .contentWrapper {
+    padding-bottom: 250px;
+  }
+
   footer {
     height: 200px;
     .footerContent {
@@ -276,8 +290,8 @@ ul:hover {
 
       .mobileImgs {
         width: 100%;
-        height: 100px;
-        margin: 20px auto;
+        height: 150px;
+        //margin: 20px auto 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-around;
