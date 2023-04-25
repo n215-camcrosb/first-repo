@@ -207,25 +207,10 @@ nav .navLinks p {
   color: white;
 }
 
-ul:hover li {
-  display: block;
+.openHamburger .fa-bars {
   position: relative;
-  padding-top: 15px;
-  width: 100px;
-  height: 50px;
-  background-color: #79addc;
-  border: 1px solid black;
   top: 160px;
-  text-align: center;
 }
-ul:hover li a {
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-}
-
 .openHamburger li {
   display: block;
   position: relative;

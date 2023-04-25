@@ -1,6 +1,5 @@
 import {loadPage, hamburgerMenu} from "../services/services.js";
 
-
 function initializeListeners() {
   $(window).on("hashchange", loadPage);
   loadPage();
@@ -13,7 +12,7 @@ $(document).ready(function () {
 });
 
 function openHamburger() {
-  console.log("open");
   hamburgerMenu.classList.toggle("openHamburger");
+  
 }
 
