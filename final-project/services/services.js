@@ -1,5 +1,6 @@
 let globalNav = document.getElementById("globalNav");
 let navLogo = document.getElementById("navLogo");
+export var hamburgerMenu = document.getElementById("hamburgerMenu");
 
 export function loadPage() {
     let hashTag = window.location.hash;
