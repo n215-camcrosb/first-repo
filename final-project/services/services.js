@@ -13,12 +13,12 @@ export function loadPage() {
 
             if (pageToLoad === "home")
             {
-                globalNav.className = "homeNav";
+                document.body.classList.add("home");
                 navLogo.src = "images/logo/logo-white.png";
             }
             else
             {
-                globalNav.className = "basicNav";
+                document.body.classList.remove("home");
                 navLogo.src = "images/logo/logo-black.png";
             }
         })
@@ -27,7 +27,7 @@ export function loadPage() {
     {
         $.get(`pages/home.html`, function (data) {
             $("#contentWrapper").html(data);
-            globalNav.className = "homeNav";
+            document.body.classList.add("home");
             navLogo.src = "images/logo/logo-white.png";
         })
     }

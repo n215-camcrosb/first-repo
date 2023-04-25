@@ -152,7 +152,7 @@ footer .footerContent .fa-brands {
   margin-right: 10px;
 }
 
-.basicNav {
+nav {
   max-width: 980px;
   height: 92px;
   margin: 0 auto;
@@ -161,16 +161,16 @@ footer .footerContent .fa-brands {
   justify-content: space-between;
   border-bottom: 2px solid black;
 }
-.basicNav ul {
+nav ul {
   display: none;
 }
-.basicNav .navLinks {
+nav .navLinks {
   width: 490px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.basicNav .navLinks a {
+nav .navLinks a {
   font-family: "Gill Sans";
   font-size: 15px;
   text-decoration: none;
@@ -178,45 +178,19 @@ footer .footerContent .fa-brands {
   padding: 0 10px;
   text-align: center;
 }
-.basicNav .navLinks p {
+nav .navLinks p {
   margin: 0 10px;
   color: #79addc;
 }
 
-.homeNav {
-  max-width: 980px;
-  height: 92px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 9;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.home nav {
   border-bottom: 2px solid white;
 }
-.homeNav ul {
-  display: none;
-}
-.homeNav ul .fa-bars {
+.home nav ul .fa-bars {
   color: white;
 }
-.homeNav .navLinks {
-  width: 490px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.homeNav .navLinks a {
-  font-family: "Gill Sans";
-  font-size: 15px;
-  text-decoration: none;
+.home nav .navLinks a {
   color: white;
-  padding: 0 10px;
-  text-align: center;
-}
-.homeNav .navLinks p {
-  margin: 0 10px;
-  color: #79addc;
 }
 
 @media (max-width: 980px) {

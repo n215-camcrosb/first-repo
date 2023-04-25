@@ -138,7 +138,7 @@ footer {
   }
 }
 
-.basicNav {
+nav {
   max-width: $content-width;
   height: 92px;
   margin: 0 auto;
@@ -176,47 +176,18 @@ footer {
   }
 }
 
-.homeNav {
-  max-width: $content-width;
-  height: 92px;
-  margin: 0 auto;
-
-  position: relative;
-  z-index: 9;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
+.home nav {
   border-bottom: 2px solid white;
 
   ul {
-    display: none;
-
     .fa-bars {
       color: white;
     }
   }
 
   .navLinks {
-    width: 490px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
     a {
-      font-family: "Gill Sans";
-      font-size: 15px;
-      text-decoration: none;
       color: white;
-      padding: 0 10px;
-      text-align: center;
-    }
-
-    p {
-      margin: 0 10px;
-      color: $site-blue;
     }
   }
 }
