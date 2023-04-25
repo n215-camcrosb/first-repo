@@ -2,30 +2,32 @@
 
 ## Purpose
 
-This homework assignment will:
+This assignment will:
 
-- Teach you how to set up a simple MVC project
-- Teach you how to interact with another JS file
-- Display infromation on a page
-- Interact with elements with jQuery
+- Be a single-page application
+- Must be in an MVC format
+- Look just like the travel-fly home work assignment and this prototype: https://xd.adobe.com/spec/7a379659-8751-4968-7a8f-0286dab79e46-0c06/
+- The font's maybe wrong to look at the PDF's under files > travel-fly folder
+- Must include all the pages.
+- Must use jQuery or pure JavaScript
+- Must navigate using the URL
 
 ## Task
 
 For this homework assignment, you will:
 
-- You must create a project named homework-nine.
-- Create a navigation bar that has four links
-- Add content to the page when you click on a link by using MVC model and jQuery
-- Use only one page and load all the content onto that page
-- Site should be fully developed with content
-- All pages must have full content. Images and text on every page and professionally styled.
-- Upload your project to Github and Web4 and add your Web4 link to the README file. 
-
-
-I used the midterm as the baseline for this homework-eight. As such, there are 4 HTML pages, but only one is used in the browser (index.html). The others have all content commented out to confirm that. 
+- You must create a project named final-project
+  -You must take your old travel-fly project and turn it into a single-page application.
+- It must look exactly like the travel-fly prototype
+- You can find the fonts and images under the Files > Travel-fly folder
+- You must use jQuery or JavaScript
+- Use only one page and load all the content onto that page dynamically.
+- You must navigate using the routing that I showed you in class. This uses the URL for navigation.
+- Must use the MVC model we have discussed, and it must by type module
+- Upload your project to Github and Web4 and add your Web4 link to the README file in Github, and submit your Github link.
 
 Index of ~camcrosb:
 https://in-info-web4.informatics.iupui.edu/~camcrosb/
 
 Index of homework-nine:
-https://in-info-web4.informatics.iupui.edu/~camcrosb/homework-nine/
+https://in-info-web4.informatics.iupui.edu/~camcrosb/final-project/
